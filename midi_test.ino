@@ -101,7 +101,7 @@ void loop()
     bpm = map(sensorValue, 0, 1023, 50.0, 200.0);
 
     // tone
-    baseTone = readSensorValue(i, analogInPin, 256);
+    baseTone = readSensorValue(i, analogInPin, 255);
     major = baseTone & 1; // major or minor
     baseTone = baseTone >> 1;
 
